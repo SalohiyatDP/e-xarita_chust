@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Generated output (produced next to each massif / under the root)
+BALANCE_OUTPUT/
+DISTRICT_SUMMARY/
+logs/
+_extracted/
+
+# Local layout template binary (author it locally; not version-controlled)
+templates/*.mxd
