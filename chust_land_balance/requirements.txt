@@ -1,0 +1,32 @@
+# ---------------------------------------------------------------------------
+# Chust District Electronic Land Balance - Python dependencies
+#
+# TARGET RUNTIME: the Python 2.7 interpreter that ships with ArcGIS Desktop
+# 10.8.2 (usually C:\Python27\ArcGIS10.8\python.exe).
+#
+# arcpy and Tkinter are part of that ArcGIS install and are NOT pip-installable
+# - do not add them here.
+#
+# Install the optional libraries below into the ArcGIS Python with:
+#     "C:\Python27\ArcGIS10.8\Scripts\pip.exe" install -r requirements.txt
+#
+# Every one of these is OPTIONAL: the application degrades gracefully when a
+# library is missing (see USER_MANUAL.md "Output formats"). Pinned to the last
+# versions that support Python 2.7.
+# ---------------------------------------------------------------------------
+
+# Read .xls contour statements without ArcPy (recommended).
+xlrd==1.2.0
+
+# Read/write .xlsx workbooks and styled Excel reports.
+openpyxl==2.6.4
+
+# Write legacy .xls reports (fallback when openpyxl is absent).
+xlwt==1.3.0
+
+# Generate the PDF balance report with Cyrillic fonts (recommended).
+reportlab==3.5.68
+
+# Extract .7z massif archives in-process (otherwise install 7-Zip and the app
+# shells out to 7z.exe).
+py7zr==0.11.3 ; python_version >= "3.5"
